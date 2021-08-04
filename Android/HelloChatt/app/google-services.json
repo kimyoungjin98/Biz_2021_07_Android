@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "241055051988",
+    "project_id": "hello-android-bd6b5",
+    "storage_bucket": "hello-android-bd6b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241055051988:android:d9331364c211d61ab2cb41",
+        "android_client_info": {
+          "package_name": "com.callor.yj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241055051988-3pefnc6sqhbo1oa1isro3ap8gfahi769.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhRG_i9vYiQO-zmSZx5lPDv8zZydVqu7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "241055051988-3pefnc6sqhbo1oa1isro3ap8gfahi769.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
