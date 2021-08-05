@@ -9,11 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CaCao">
+        <activity
+            android:name=".SettingsActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/title_activity_settings"></activity>
 
-        <meta-data android:name="com.google.firebase.ml.vision.DEPENDENCIES"
-            android:value="face"/>
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="face" />
 
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.CaCao.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
