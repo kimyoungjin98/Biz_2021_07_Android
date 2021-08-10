@@ -1,0 +1,2 @@
+rootProject.name = "내 도서관 2"
+include ':app'
