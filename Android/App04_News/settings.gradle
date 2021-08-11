@@ -1,0 +1,2 @@
+rootProject.name = "오늘의 Top News"
+include ':app'
