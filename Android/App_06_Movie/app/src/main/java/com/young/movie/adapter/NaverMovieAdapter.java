@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.young.movie.databinding.MovieItemViewBinding;
 import com.young.movie.model.MovieDTO;
 
@@ -40,7 +41,6 @@ public class NaverMovieAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 
         NaverMovieViewHolder movieViewHolder
                 = (NaverMovieViewHolder) holder;
-
         MovieDTO movieDTO = movieList.get(position);
         MovieItemViewBinding binding
                 = movieViewHolder.movieBinding;
@@ -48,6 +48,12 @@ public class NaverMovieAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         binding.movieItemTitle.setText(movieDTO.getTitle());
         binding.movieItemDirect.setText(movieDTO.getDirector());
         binding.movieItemActor.setText(movieDTO.getActor());
+
+        if(!movieDTO.getImage().isEmpty() == false){
+            Glide.with(binding.movieItemImage.getContext())
+                    .load(movieDTO.getImage())
+                    .into(binding.movieItemImage);
+        }
 
     }
 
